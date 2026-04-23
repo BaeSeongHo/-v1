@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap');
+
+:root {
+  font-family: 'Outfit', sans-serif;
+  color-scheme: dark;
+  background-color: #030303;
+  color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #030303;
+  color: #ffffff;
+  overflow: hidden;
+  text-align: center;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.cyber-panel {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(50px) saturate(220%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 64px;
+  box-shadow: 0 50px 120px -30px rgba(0, 0, 0, 1);
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.neo-input {
+  @apply py-8 px-12 bg-white/5 border border-white/15 rounded-[40px] text-white text-center text-5xl font-black 
+         focus:outline-none focus:ring-4 focus:ring-blue-500/20 transition-all duration-500 placeholder:text-white/5;
+  width: 100% !important;
+  letter-spacing: -0.05em;
+}
+
+.neo-button {
+  @apply py-8 bg-white text-black font-black rounded-[40px] text-3xl 
+         flex items-center justify-center gap-6 shadow-2xl transition-all duration-500 
+         hover:bg-blue-600 hover:text-white active:scale-[0.95] tracking-[.3em] uppercase;
+  width: 100% !important;
+}
+
+@keyframes premium-float {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-30px) scale(1.02); }
+}
+
+.animate-premium-float {
+  animation: premium-float 15s ease-in-out infinite;
+}
+
+canvas {
+  display: block;
+  border-radius: 48px;
+  box-shadow: 0 80px 200px rgba(0, 0, 0, 0.9);
+  background: #000;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 0 auto !important;
+}
+
