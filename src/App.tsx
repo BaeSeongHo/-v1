@@ -465,7 +465,7 @@ const App: React.FC = () => {
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', flex: 1 }}>
               <span style={{ fontSize: '10px', fontWeight: 900, opacity: 0.2, letterSpacing: '0.3em', textTransform: 'uppercase', marginBottom: '8px' }}>Mission</span>
               <span style={{ fontSize: '1.25rem', fontWeight: 900, color: '#FF595E' }}>RECOVERY: {redBricksBroken}/3</span>
-              <span style={{ fontSize: '1.5rem', fontWeight: 900, color: '#fff', marginTop: '4px', tabularNums: true }}>{formatTime(elapsedTime)}</span>
+              <span style={{ fontSize: '1.5rem', fontWeight: 900, color: '#fff', marginTop: '4px', fontVariantNumeric: 'tabular-nums' }}>{formatTime(elapsedTime)}</span>
             </div>
 
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', flex: 1, position: 'relative' }}>
