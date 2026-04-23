@@ -514,8 +514,8 @@ const App: React.FC = () => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                backgroundColor: 'rgba(0,0,0,0.92)',
-                backdropFilter: 'blur(50px)',
+                backgroundColor: gameState === 'WIN' ? 'rgba(0,0,0,0.4)' : 'rgba(0,0,0,0.92)',
+                backdropFilter: gameState === 'WIN' ? 'blur(8px)' : 'blur(50px)',
                 borderRadius: '48px',
                 zIndex: 30
               }}>
